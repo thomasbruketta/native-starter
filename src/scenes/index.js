@@ -12,6 +12,7 @@ import Dummy from './Dummy'
 import Home from './Home'
 import ProfileNavigator from './ProfileNavigator'
 import Showcase from './Showcase'
+import ProductDetail from './ProductDetail'
 
 // }}}
 
@@ -32,31 +33,28 @@ const stores = createStores()
 
 // -- Routes --
 //TODO: consider moving Tabs to its own folder
-const Tabs = TabNavigator({
-  Home: {
-    screen: Home,
-  },
-  ProfileNavigator: {
-    screen: ProfileNavigator,
-  },
-  Showcase: {
-    screen: Showcase,
-  },
-}, {
-  lazy: true,
-  tabBarComponent: TabBarBottom, // override Android's default of top
-  tabBarOptions: {
-    activeTintColor: '#111',
-    showIcon: true,
-  },
-})
+// const Tabs = TabNavigator({
+//   Home: {
+//     screen: Home,
+//   },
+//   ProfileNavigator: {
+//     screen: ProfileNavigator,
+//   },
+//   Showcase: {
+//     screen: Showcase,
+//   },
+// }, {
+//   lazy: true,
+//   tabBarComponent: '', // override Android's default of top
+//   tabBarOptions: {
+//     activeTintColor: '#111',
+//     showIcon: true,
+//   },
+// })
 
 const App = StackNavigator({
-  Tabs: {
-    screen: Tabs,
-  },
-  Dummy: {
-    screen: Dummy,
+  ProductDetail: {
+    screen: ProductDetail,
   },
 }, {
   headerMode: 'none',

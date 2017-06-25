@@ -37,7 +37,7 @@
 	<string></string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>TradeGothicforNike365-BdCn.ttf</string>
+		<string>JosefinSans-SemiBold.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

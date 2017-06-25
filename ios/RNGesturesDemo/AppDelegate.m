@@ -16,7 +16,7 @@
 
 BOOL useBundle = NO; // Set YES to run pre-bundled (do `npm run bundle` from the command line first)
 
-NSString *moduleName = @"NativeStarter"; // index.ios.js -> AppRegistry.registerComponent()
+NSString *moduleName = @"RNGesturesDemo"; // index.ios.js -> AppRegistry.registerComponent()
 
 NSString *wifiIP = nil; // no need to set this now (set only as a manual override if automation fails)
 
@@ -32,7 +32,7 @@ NSString *wifiIP = nil; // no need to set this now (set only as a manual overrid
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"NativeStarter"
+                                                      moduleName:@"RNGesturesDemo"
                                                initialProperties:nil
                                                    launchOptions:launchOptions];
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];

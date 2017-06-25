@@ -1,0 +1,15 @@
+export default COLOR = {
+  BORDER_LIGHT: '#e5e5e5',
+  BLACK: '#000',
+  DARK: '#222',
+  GREY_BG_LIGHT: '#fafafa',
+  GREY_LIGHT: '#f7f7f7',
+  AC: '#acacac',
+  GREY_TEXT: '#8d8d8d',
+  GREY_INACTIVE: '#ccc',
+  GREY_INACTIVE_DARK: '#666666',
+  GREY_DARK: '#ddd',
+  PURPLE: '#6f4e95',
+  WHITE: '#fff',
+  DARK_BORDER: '#3C3C3C',
+}

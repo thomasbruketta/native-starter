@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "NativeStarter-tvOS.app"
-               BlueprintName = "NativeStarter-tvOS"
-               ReferencedContainer = "container:NativeStarter.xcodeproj">
+               BuildableName = "RNGesturesDemo-tvOS.app"
+               BlueprintName = "RNGesturesDemo-tvOS"
+               ReferencedContainer = "container:RNGesturesDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "NativeStarter-tvOSTests.xctest"
-               BlueprintName = "NativeStarter-tvOSTests"
-               ReferencedContainer = "container:NativeStarter.xcodeproj">
+               BuildableName = "RNGesturesDemo-tvOSTests.xctest"
+               BlueprintName = "RNGesturesDemo-tvOSTests"
+               ReferencedContainer = "container:RNGesturesDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "NativeStarter-tvOSTests.xctest"
-               BlueprintName = "NativeStarter-tvOSTests"
-               ReferencedContainer = "container:NativeStarter.xcodeproj">
+               BuildableName = "RNGesturesDemo-tvOSTests.xctest"
+               BlueprintName = "RNGesturesDemo-tvOSTests"
+               ReferencedContainer = "container:RNGesturesDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "NativeStarter-tvOS.app"
-            BlueprintName = "NativeStarter-tvOS"
-            ReferencedContainer = "container:NativeStarter.xcodeproj">
+            BuildableName = "RNGesturesDemo-tvOS.app"
+            BlueprintName = "RNGesturesDemo-tvOS"
+            ReferencedContainer = "container:RNGesturesDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "NativeStarter-tvOS.app"
-            BlueprintName = "NativeStarter-tvOS"
-            ReferencedContainer = "container:NativeStarter.xcodeproj">
+            BuildableName = "RNGesturesDemo-tvOS.app"
+            BlueprintName = "RNGesturesDemo-tvOS"
+            ReferencedContainer = "container:RNGesturesDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "NativeStarter-tvOS.app"
-            BlueprintName = "NativeStarter-tvOS"
-            ReferencedContainer = "container:NativeStarter.xcodeproj">
+            BuildableName = "RNGesturesDemo-tvOS.app"
+            BlueprintName = "RNGesturesDemo-tvOS"
+            ReferencedContainer = "container:RNGesturesDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,4 +1,4 @@
-package com.nativestarter;
+package com.rngesturesdemo;
 
 import android.app.Application;
 

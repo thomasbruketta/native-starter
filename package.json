@@ -1,5 +1,5 @@
 {
-  "name": "NativeStarter",
+  "name": "RNGesturesDemo",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -17,7 +17,7 @@
     "upgrade": "react-native-git-upgrade",
     "force-upgrade": "react-native upgrade && react-native link",
     "ios": "react-native run-ios",
-    "xcode": "open ios/NativeStarter.xcodeproj",
+    "xcode": "open ios/RNGesturesDemo.xcodeproj",
     "android": "react-native run-android && yarn run android-logs",
     "android-emulator": "android avd",
     "android-logs": "adb logcat *:S ReactNative:V ReactNativeJS:V",

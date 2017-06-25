@@ -13,4 +13,4 @@ import App from './src/scenes'
 // $FlowFixMe: suppressing this while flowtype doesn't understand RN disableYellowBox
 console.disableYellowBox = true
 
-AppRegistry.registerComponent( 'NativeStarter', () => App )
+AppRegistry.registerComponent( 'RNGesturesDemo', () => App )
