@@ -19,11 +19,11 @@ export default class Button extends React.Component<void, Props, void> {
     return (
       <Event_
         hitSlop={10}
-        pressEffect='opacity'
+        //pressEffect='opacity'
         onPress={this.props.onPress}
       >
         <Style_
-          borderColor='white'
+          borderColor='#222'
           borderWidth={1}
           borderRadius={1}
         >
@@ -37,7 +37,8 @@ export default class Button extends React.Component<void, Props, void> {
               backgroundColor='transparent'
             >
               <Header
-                color='white'
+                color='#222'
+                size={12}
                 height={16}
               >
                 {this.props.label}

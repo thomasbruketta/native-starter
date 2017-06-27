@@ -17,7 +17,7 @@ const ICON = {
   // arrowDown: require('images/icons/arrowDownWhite.png'),
   arrowLeft: require('images/icons/left-arrow.png'),
   bag: require('images/icons/shopping_bag.png'),
-  // close: require('images/icons/close.png'),
+  close: require('images/icons/close.png'),
   // plus: require('images/icons/plusNarrow.png'),
   // camera: require('images/icons/camera.png'),
   // more: require('images/icons/more.png'),

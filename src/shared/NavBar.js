@@ -53,7 +53,7 @@ export default class NavBar extends React.Component {
   }
 
   render() {
-    let backgroundColor = COLOR.DARK
+    let backgroundColor = 'transparent'
     if (this.props.backgroundColor) {
       backgroundColor = this.props.backgroundColor
     }

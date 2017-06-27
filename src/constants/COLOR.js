@@ -5,7 +5,7 @@ export default COLOR = {
   GREY_BG_LIGHT: '#fafafa',
   GREY_LIGHT: '#f7f7f7',
   AC: '#acacac',
-  GREY_TEXT: '#8d8d8d',
+  GREY_TEXT: '#888',
   GREY_INACTIVE: '#ccc',
   GREY_INACTIVE_DARK: '#666666',
   GREY_DARK: '#ddd',

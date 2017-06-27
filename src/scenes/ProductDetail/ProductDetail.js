@@ -3,7 +3,7 @@
 import {
   StatusBar
 } from 'react-native'
-import { View, Col } from 'constelation-view'
+import { View, Col, Row } from 'constelation-view'
 import Event_ from 'constelation-event_'
 import Style_ from 'constelation-style_'
 import React from 'react'
@@ -31,28 +31,34 @@ export default class ProductDetail extends React.Component<void, Props, void> {
         grow
       >
         <StatusBar
-          barStyle='light-content'
+          barStyle='dark-content'
         />
-        <NavBar
-          theme='dark'
-          border={false}
-          leftButton={
-            <Icon
-              type='arrowLeft'
-              color={COLOR.WHITE}
-            />
-          }
-          title='Wizard Shop'
-          rightButton={
-            <Icon
-              type='bag'
-              color={COLOR.WHITE}
-            />
-          }
-        />
+        <View
+          position='absolute'
+          top={0}
+          width='100%'
+          zIndex={10}
+        >
+          <NavBar
+            theme='dark'
+            border={false}
+            leftButton={
+              <Icon
+                type='close'
+                color={COLOR.DARK}
+              />
+            }
+            rightButton={
+              <Icon
+                type='bag'
+                color={COLOR.DARK}
+              />
+            }
+          />
+        </View>
         <Image
           source={require('images/hero.jpg')}
-          height={667 - 80}
+          height={567}
           resizeMode='contain'
         >
           <View
@@ -60,19 +66,6 @@ export default class ProductDetail extends React.Component<void, Props, void> {
             center
           >
             <Col>
-              <Header
-                center
-                size={20}
-                color={COLOR.WHITE}
-                height={28}
-              >
-                {`Grandmaster${CHAR.NL}Oak Staff`}
-              </Header>
-              <Space size={20} />
-              <Button
-                label={'Add to Cart'}
-                onPress={this.props.onIncreaseCounter}
-              />
               {/* <Event_
                 pressEffect='opacity'
                 onPress={this.props.onIncreaseCounter}
@@ -87,6 +80,31 @@ export default class ProductDetail extends React.Component<void, Props, void> {
             </Col>
           </View>
         </Image>
+        <Row
+          justify='space-between'
+          align='center'
+          height={100}
+          paddingHorizontal={28}
+        >
+          <Col>
+            <Header
+              size={14}
+              height={24}
+            >
+              Grandmaster Oak Staff
+            </Header>
+            <Text
+              size={14}
+              color={COLOR.GREY_TEXT}
+            >
+              Wizard Staff — 270 Gold
+            </Text>
+          </Col>
+          <Button
+            label={'Add to Cart'}
+            onPress={this.props.onIncreaseCounter}
+          />
+        </Row>
       </Col>
     )
   }
