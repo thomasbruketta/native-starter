@@ -6,8 +6,10 @@ import {
   ScrollView,
 } from 'react-native'
 import { View, Col } from 'constelation-view'
+import Style_ from 'constelation-style_'
 import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
+import Text from 'constelation-text'
 import NavBar from 'shared/NavBar'
 import Icon from 'shared/Icon'
 import COLOR from 'constants/COLOR'
@@ -55,13 +57,31 @@ export default class ProductDetail extends React.Component<void, Props, void> {
                 />
               }
             />
+            { this.props.value > 0 &&
+              <Style_
+                backgroundColor='green'
+                borderRadius={24}
+                zIndex={15}
+              >
+                <View
+                  position='absolute'
+                  top={24}
+                  right={12}
+                  width={24}
+                  height={24}
+                  center
+                >
+                  <Text color='white'>{this.props.value}</Text>
+                </View>
+              </Style_>
+            }
           </View>
           <Image
             source={require('images/hero.jpg')}
             height={567}
             resizeMode='contain'
           />
-          <SimpleDetail />
+          <SimpleDetail onIncreaseCounter={this.props.onIncreaseCounter} />
           <FullDetails />
         </Col>
       </ScrollView>
