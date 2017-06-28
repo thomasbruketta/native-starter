@@ -9,8 +9,10 @@ import View from 'constelation-view'
 
 import type { Stores } from 'stores'
 
-import Profile from './ProductDetail'
-import type { Props } from './ProductDetail'
+import ProductDetailTouch from './ProductDetailTouch'
+import ProductDetailScroll from './ProductDetailScroll'
+import ProductDetailPan from './ProductDetailPan'
+import type { Props } from './ProductDetailPan'
 
 // }}}
 
@@ -33,7 +35,9 @@ class ProductDetailContainer extends React.Component {
 
   render() {
     return (
-      <Profile {...this.props} />
+      // <ProductDetailTouch {...this.props} />
+      // <ProductDetailScroll {...this.props} />
+      <ProductDetailPan {...this.props} />
     )
   }
 }

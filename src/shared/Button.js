@@ -7,19 +7,26 @@ import Style_ from 'constelation-style_'
 import Header from 'shared/Header'
 import Text from 'constelation-text'
 import View from 'constelation-view'
-
 // }}}
 
 type Props = {
   label: string,
-  onPress: Function
+  onPress: Function,
+  buttonType?: 'no-feedback' | 'opacity',
 }
+
 export default class Button extends React.Component<void, Props, void> {
+  buttonContent = {
+
+  }
+
   render() {
+    const pressEffect = (this.props.buttonType === 'opacity') ? 'opacity' : null
+
     return (
       <Event_
         hitSlop={10}
-        //pressEffect='opacity'
+        pressEffect={pressEffect}
         onPress={this.props.onPress}
       >
         <Style_
