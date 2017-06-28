@@ -12,4 +12,5 @@ export default COLOR = {
   PURPLE: '#6f4e95',
   WHITE: '#fff',
   DARK_BORDER: '#3C3C3C',
+  GREEN: '#228B22',
 }
