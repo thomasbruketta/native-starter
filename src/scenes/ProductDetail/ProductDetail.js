@@ -35,7 +35,7 @@ export default class ProductDetail extends React.Component<void, Props, void> {
         >
           <StatusBar
             barStyle='dark-content'
-            //hidden
+            hidden
           />
           <View
             position='absolute'

@@ -78,6 +78,13 @@ export default class Button extends React.Component<void, Props, void> {
 
 
         <ScrollView
+          style={{flex: 1}}
+        >
+          {this.props.children}
+        </ScrollView>
+
+
+        <ScrollView
           horizontal
           pagingEnabled
           style={{flex: 1}}
