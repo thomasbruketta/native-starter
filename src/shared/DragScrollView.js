@@ -148,7 +148,7 @@ export default class DragScrollView extends React.Component<void, IState> {
 
     return (
       <Style_
-        backgroundColor={'#000'}
+        backgroundColor={'white'}
         translateY={this.pan.y}
         {...this.gesture.panHandlers}
       >
@@ -181,6 +181,7 @@ export default class DragScrollView extends React.Component<void, IState> {
                   rotate={arrowRotateAnim}
                 >
                   <Image
+                    tintColor='#222'
                     source={require('images/icons/arrowDown.png')}
                     animated
                   />

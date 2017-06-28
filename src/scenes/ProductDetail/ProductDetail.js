@@ -15,6 +15,7 @@ import Icon from 'shared/Icon'
 import COLOR from 'constants/COLOR'
 import SimpleDetail from './_/SimpleDetail'
 import FullDetails from './_/FullDetails'
+import DragScrollView from 'shared/DragScrollView'
 
 // }}}
 
@@ -26,14 +27,15 @@ export type Props = {
 export default class ProductDetail extends React.Component<void, Props, void> {
   render() {
     return (
-      <ScrollView
-        style={{flex: 1}}
-      >
+      // <ScrollView
+      //   style={{flex: 1}}
+      // >
         <Col
           grow
         >
           <StatusBar
             barStyle='dark-content'
+            //hidden
           />
           <View
             position='absolute'
@@ -67,24 +69,54 @@ export default class ProductDetail extends React.Component<void, Props, void> {
                   position='absolute'
                   top={24}
                   right={12}
-                  width={24}
-                  height={24}
                   center
                 >
-                  <Text color='white'>{this.props.value}</Text>
+                  <View
+                    width={24}
+                    height={24}
+                    center
+                  >
+                    <Text color='white'>{this.props.value}</Text>
+                  </View>
+                  <View
+                    position='absolute'
+                    top={-30}
+                  >
+                    <Image
+                      resizeMode='contain'
+                      source={require('images/smoke-no-repeat.gif')}
+                      width={70}
+                      height={70}
+                    />
+                  </View>
                 </View>
               </Style_>
             }
           </View>
           <Image
             source={require('images/hero.jpg')}
-            height={567}
+            grow
             resizeMode='contain'
           />
-          <SimpleDetail onIncreaseCounter={this.props.onIncreaseCounter} />
-          <FullDetails />
+          <View
+            position='absolute'
+            top={0}
+            left={0}
+            right={0}
+            bottom={0}
+            zIndex={50}
+          >
+            <DragScrollView>
+              <View
+                animated
+              >
+                <SimpleDetail onIncreaseCounter={this.props.onIncreaseCounter} />
+                <FullDetails />
+              </View>
+            </DragScrollView>
+          </View>
         </Col>
-      </ScrollView>
+      // </ScrollView>
     )
   }
 }

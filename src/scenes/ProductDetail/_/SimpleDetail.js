@@ -33,10 +33,10 @@ export default class SimpleDetail extends React.Component {
             Wizard Staff — 270 Gold
           </Text>
         </Col>
-        <Button
+        {/* <Button
           label={'Add to Cart'}
           onPress={this.props.onIncreaseCounter}
-        />
+        /> */}
       </Row>
     )
   }

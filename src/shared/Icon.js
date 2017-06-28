@@ -14,7 +14,7 @@ const ICON = {
   // search: require('images/icons/search.png'),
   // comment: require('images/icons/comment.png'),
   // arrowRight: require('images/icons/right-arrow.png'),
-  // arrowDown: require('images/icons/arrowDownWhite.png'),
+  arrowDown: require('images/icons/arrowDownWhite.png'),
   arrowLeft: require('images/icons/left-arrow.png'),
   bag: require('images/icons/shopping_bag.png'),
   close: require('images/icons/close.png'),
