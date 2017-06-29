@@ -37,7 +37,6 @@ export default class Button extends React.Component<void, Props, void> {
           <View
             center
             paddingVertical={8}
-            // paddingBottom={8}
             paddingHorizontal={12}
           >
             <Style_
