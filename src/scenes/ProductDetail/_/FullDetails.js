@@ -29,7 +29,7 @@ export default class FullDetails extends React.Component {
           <Text
             size={16}
             height={30}
-            fontFamily='helvetica'
+            fontFamily='ChiswickGrotesqueWeb-Light'
           >
             This Grandmaster Wizard Staff keeps you prepared for a wide array of activities — from leisurely strolls in the woods to fighting a demon in the Mines of Moria, you will be prepared.
           </Text>
@@ -37,21 +37,21 @@ export default class FullDetails extends React.Component {
           <Text
             size={16}
             height={30}
-            fontFamily='helvetica'
+            fontFamily='ChiswickGrotesqueWeb-Light'
           >
             • Strong oak staff body
           </Text>
           <Text
             size={16}
             height={30}
-            fontFamily='helvetica'
+            fontFamily='ChiswickGrotesqueWeb-Light'
           >
             • Crystal top can be used as a lamp
           </Text>
           <Text
             size={16}
             height={30}
-            fontFamily='helvetica'
+            fontFamily='ChiswickGrotesqueWeb-Light'
           >
             • Comfortable ergonomic handle
           </Text>

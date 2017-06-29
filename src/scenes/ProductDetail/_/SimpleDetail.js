@@ -30,12 +30,12 @@ export default class SimpleDetail extends React.Component<void, Props, void> {
             size={14}
             height={24}
           >
-            Grandmaster Oak Staff
+            Master Oak Staff
           </Header>
           <Text
             size={14}
             color={COLOR.GREY_TEXT}
-            fontFamily='helvetica'
+            fontFamily='ChiswickGrotesqueWeb-Light'
           >
             Wizard Staff — 270 Gold
           </Text>
