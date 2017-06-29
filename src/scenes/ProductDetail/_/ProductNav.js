@@ -55,7 +55,12 @@ export default class ProductNav extends React.Component<void, Props, void> {
                 height={24}
                 center
               >
-                <Text color='white'>{this.props.cartCount}</Text>
+                <Text
+                  color='white'
+                  fontFamily='helvetica'
+                >
+                  {this.props.cartCount}
+                </Text>
               </View>
               <View
                 position='absolute'

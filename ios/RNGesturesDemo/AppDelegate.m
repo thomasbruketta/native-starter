@@ -28,6 +28,12 @@ NSString *wifiIP = nil; // no need to set this now (set only as a manual overrid
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation = nil;
+  
+  for (NSString *fontFamilyName in [UIFont familyNames]) {
+    for (NSString *fontName in [UIFont fontNamesForFamilyName:fontFamilyName]) {
+      NSLog(@"Family: %@    Font: %@", fontFamilyName, fontName);
+    }
+  }
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 

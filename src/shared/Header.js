@@ -11,7 +11,7 @@ export default class Header extends React.Component {
   };
 
   static defaultProps = {
-    fontFamily: 'JosefinSans-SemiBold',
+    fontFamily: 'CheltenhamBT-Roman',
     style: {
       backgroundColor: 'transparent',
     }
