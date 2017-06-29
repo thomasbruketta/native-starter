@@ -193,7 +193,7 @@ export default class DragScrollView extends React.Component<void, IState> {
           </ScrollView>
 
 
-          <Style_ backgroundColor='#111' >
+          <Style_ backgroundColor='#222' >
             <View
               alignHorizontal='center'
               position='absolute'
