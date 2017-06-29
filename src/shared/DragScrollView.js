@@ -7,6 +7,7 @@ import {
 } from 'react-native'
 
 import View from 'constelation-view'
+import Header from 'shared/Header'
 import Image from 'constelation-image'
 import ScrollView from 'constelation-scroll-view'
 import Style_ from 'constelation-style_'
@@ -161,6 +162,7 @@ export default class DragScrollView extends React.Component<void, IState> {
             scrollEnabled={this.state.isContentAtTop}
             onScroll={this.handleScroll}
             overflow='hidden'
+            contentContainerStyle={{paddingBottom: 54}}
           >
             {this.props.children}
 
@@ -189,6 +191,26 @@ export default class DragScrollView extends React.Component<void, IState> {
               </View>
             </Event_>
           </ScrollView>
+
+
+          <Style_ backgroundColor='#111' >
+            <View
+              alignHorizontal='center'
+              position='absolute'
+              bottom={-4}
+              right={0}
+              left={0}
+              padding={20}
+              paddingBottom={24}
+            >
+              <Header
+                color='white'
+                size={14}
+              >
+                ADD TO CHEST
+              </Header>
+            </View>
+          </Style_>
 
         </View>
       </Style_>
