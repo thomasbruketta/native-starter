@@ -19,6 +19,10 @@ import type { Props } from './ProductDetailPan'
 class ProductDetailContainer extends React.Component {
   props: Props
 
+  state = {
+    isSmokeVisible: false,
+  }
+
   static navigationOptions = ({ navigation }) => ({
     headerTitle: 'Oak Grand Wizard Staff',
     headerRight: (
@@ -35,9 +39,9 @@ class ProductDetailContainer extends React.Component {
 
   render() {
     return (
-      // <ProductDetailTouch {...this.props} />
+      <ProductDetailTouch {...this.props} />
       // <ProductDetailScroll {...this.props} />
-      <ProductDetailPan {...this.props} />
+      // <ProductDetailPan {...this.props} />
     )
   }
 }

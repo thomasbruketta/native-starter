@@ -71,6 +71,7 @@ export default class ProductNav extends React.Component<void, Props, void> {
                   source={require('images/smoke-no-repeat.gif')}
                   width={70}
                   height={70}
+                  key={this.props.cartCount}
                 />
               </View>
             </View>
