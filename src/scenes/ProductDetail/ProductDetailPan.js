@@ -3,17 +3,10 @@
 import React from 'react'
 import {
   StatusBar,
-  ScrollView,
 } from 'react-native'
 import { View, Col } from 'constelation-view'
-import Style_ from 'constelation-style_'
-import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
-import Text from 'constelation-text'
-import NavBar from 'shared/NavBar'
-import Icon from 'shared/Icon'
 import DragScrollView from 'shared/DragScrollView'
-import COLOR from 'constants/COLOR'
 import SimpleDetail from './_/SimpleDetail'
 import FullDetails from './_/FullDetails'
 import ProductNav from './_/ProductNav'

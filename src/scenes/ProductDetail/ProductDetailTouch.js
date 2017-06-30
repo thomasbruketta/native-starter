@@ -27,6 +27,7 @@ export type Props = {
 
 export default class ProductDetailTouch extends React.Component<void, Props, void> {
   render() {
+    console.log
     return (
       <Col
         grow
@@ -40,7 +41,19 @@ export default class ProductDetailTouch extends React.Component<void, Props, voi
           grow
           source={require('images/hero.jpg')}
           resizeMode='contain'
-        />
+        >
+          {this.props.value > 0 && //this.props.isSmokeVisible &&
+            <Image
+              resizeMode='contain'
+              source={require('images/smoke-no-repeat.gif')}
+              width={140}
+              height={140}
+              position='absolute'
+              left={20}
+              key={this.props.value}
+            />
+          }
+        </Image>
         <View
           position='absolute'
           // top={0}

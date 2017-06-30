@@ -94,8 +94,6 @@ export default class FullDetails extends React.Component {
 
 const styles = StyleSheet.create({
   carouselContainer: {
-    // marginHorizontal: 28,
-    // marginTop: 28,
     backgroundColor: COLOR.F7,
   },
 })

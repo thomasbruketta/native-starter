@@ -33,11 +33,14 @@ class ProductDetailContainer extends React.Component {
     ),
   })
 
+  state = {
+    isSmokeVisible: false,
+  }
   render() {
     return (
-      // <ProductDetailTouch {...this.props} />
+      <ProductDetailTouch {...this.props} />
       // <ProductDetailScroll {...this.props} />
-      <ProductDetailPan {...this.props} />
+      // <ProductDetailPan {...this.props} />
     )
   }
 }

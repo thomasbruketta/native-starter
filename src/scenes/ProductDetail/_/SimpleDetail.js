@@ -8,7 +8,6 @@ import ButtonHighlight from 'shared/ButtonHighlight'
 import COLOR from 'constants/COLOR'
 
 type Props = {
-  // hasButton?: bool,
   buttonType?: 'no-feedback' | 'opacity' | 'highlight',
   onIncreaseCounter: Function,
 }

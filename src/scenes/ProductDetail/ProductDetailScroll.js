@@ -43,7 +43,18 @@ export default class ProductDetailScroll extends React.Component<void, Props, vo
             grow
             source={require('images/hero.jpg')}
             resizeMode='contain'
-          />
+          >
+            {this.props.value > 0 &&
+              <Image
+                resizeMode='contain'
+                source={require('images/smoke-no-repeat.gif')}
+                width={140}
+                height={140}
+                left={20}
+                key={this.props.value}
+              />
+            }
+          </Image>
           <View
             marginTop={-100}
           >
@@ -52,7 +63,7 @@ export default class ProductDetailScroll extends React.Component<void, Props, vo
               buttonType='opacity'
             />
             <FullDetails />
-        </View>
+          </View>
         </Col>
       </ScrollView>
     )
