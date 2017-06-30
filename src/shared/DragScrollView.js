@@ -64,14 +64,14 @@ export default class DragScrollView extends React.Component<void, IState> {
         const travelDist = Math.abs(gestureState.dy)
         let startLocation = gestureState.x0
         const currentLocation = gestureState.moveY
-        if ( startLocation === 0 ) {
+        if (startLocation === 0) {
           startLocation = currentLocation
         }
 
         const panThreshold = travelDist > 10 && Math.abs(gestureState.dx) < 15
         const grantPanUp = (!this.state.isContentAtTop && gestureState.dy < 0)
         const grantPanDown = (this.state.isContentAtTop && gestureState.dy > 0 && this.state.isScrollViewAtScrollTop)
-        if ( panThreshold && (grantPanUp || grantPanDown) ) {
+        if (panThreshold && (grantPanUp || grantPanDown)) {
           return true
         }
         else {
@@ -92,13 +92,13 @@ export default class DragScrollView extends React.Component<void, IState> {
         const crossedThreshold = Math.abs(gestureState.dy) > threshold
         this.pan.setValue({y: this.animatedValueY, x: 0})
         this.pan.setOffset({y: 0, x: 0})
-        if ( crossedThreshold && this.state.isContentAtTop && gestureState.dy > 0 ) {
+        if (crossedThreshold && this.state.isContentAtTop && gestureState.dy > 0) {
           this.animateContentToBottom()
         }
-        else if ( (crossedThreshold) && gestureState.dy < 0 ) {
+        else if ((crossedThreshold) && gestureState.dy < 0) {
           this.animateContentToTop()
         }
-        else if (!crossedThreshold && this.state.isContentAtTop ) {
+        else if (!crossedThreshold && this.state.isContentAtTop) {
           this.setPositionToTop.start()
         }
         else {
@@ -110,7 +110,7 @@ export default class DragScrollView extends React.Component<void, IState> {
   }
 
   animateContentToTop = () => {
-    if ( !this.state.isContentAtTop ) {
+    if (!this.state.isContentAtTop) {
       this.setPositionToTop.start()
       this.setState({isContentAtTop: true})
     }

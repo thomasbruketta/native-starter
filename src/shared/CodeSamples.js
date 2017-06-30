@@ -43,7 +43,6 @@ export default class Button extends React.Component<void, Props, void> {
         </TouchableWithoutFeedback>
 
 
-
         {/* TouchableOpacity */}
 
 
@@ -56,7 +55,6 @@ export default class Button extends React.Component<void, Props, void> {
             <Text style={styles.buttonLabel}>ADD TO CART</Text>
           </View>
         </TouchableOpacity>
-
 
 
         {/* Touchable Highlight */}

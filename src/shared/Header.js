@@ -14,7 +14,7 @@ export default class Header extends React.Component {
     fontFamily: 'CheltenhamBT-Roman',
     style: {
       backgroundColor: 'transparent',
-    }
+    },
   };
 
   render() {

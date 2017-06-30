@@ -61,7 +61,7 @@ export default class ProductDetailScroll extends React.Component<void, Props, vo
               buttonType='opacity'
             />
             <FullDetails />
-        </View>
+          </View>
         </Col>
       </ScrollView>
     )
