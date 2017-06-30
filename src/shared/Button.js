@@ -5,7 +5,6 @@ import Event_ from 'constelation-event_'
 import React from 'react'
 import Style_ from 'constelation-style_'
 import Header from 'shared/Header'
-import Text from 'constelation-text'
 import View from 'constelation-view'
 // }}}
 

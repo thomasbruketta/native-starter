@@ -19,7 +19,7 @@ interface IState {
   isScrollViewAtScrollTop: boolean,
 }
 
-export default class DragScrollView extends React.Component<void, IState> {
+export default class DragScrollView extends React.Component<void, IState, void> {
   static navigationOptions = {
   }
 
@@ -157,8 +157,8 @@ export default class DragScrollView extends React.Component<void, IState> {
           animated
         >
           <ScrollView
-            refNode={this.setRef}
             grow
+            refNode={this.setRef}
             scrollEnabled={this.state.isContentAtTop}
             onScroll={this.handleScroll}
             overflow='hidden'
@@ -183,9 +183,9 @@ export default class DragScrollView extends React.Component<void, IState> {
                   rotate={arrowRotateAnim}
                 >
                   <Image
+                    animated
                     tintColor='#222'
                     source={require('images/icons/arrowDown.png')}
-                    animated
                   />
                 </Style_>
               </View>

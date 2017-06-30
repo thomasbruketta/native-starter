@@ -50,6 +50,8 @@ export default class ProductDetailScroll extends React.Component<void, Props, vo
                 source={require('images/smoke-no-repeat.gif')}
                 width={140}
                 height={140}
+                left={20}
+                key={this.props.value}
               />
             }
           </Image>

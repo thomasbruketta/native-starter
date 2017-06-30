@@ -11,7 +11,10 @@ import SLOP from 'constants/slop'
 
 export default class NavBar extends React.Component {
   static propTypes = {
+    animated: PropTypes.bool,
+    backgroundColor: PropTypes.any, //can be animated values
     border: PropTypes.bool,
+    borderColor: PropTypes.any, //can be animated values
     centerButton: PropTypes.node,
     leftActiveOpactiy: PropTypes.number,
     leftButton: PropTypes.node,
@@ -23,9 +26,6 @@ export default class NavBar extends React.Component {
     rightButtonActiveOpacity: PropTypes.number,
     theme: PropTypes.oneOf(['dark', 'light']),
     title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-    animated: PropTypes.bool,
-    backgroundColor: PropTypes.any, //can be animated values
-    borderColor: PropTypes.any, //can be animated values
   };
 
   static defaultProps = {
@@ -60,11 +60,6 @@ export default class NavBar extends React.Component {
     let textColor = this.props.theme === 'dark' ? 'WHITE' : 'DARK'
     if (this.props.textColor) {
       textColor = this.props.textColor
-    }
-
-    let borderColor = COLOR.BORDER_LIGHT
-    if (this.props.borderColor) {
-      borderColor = this.props.borderColor
     }
 
     return (
@@ -113,8 +108,8 @@ export default class NavBar extends React.Component {
               (this.props.title && this.props.title.length > 0) && (
                 <View>
                   <Header
-                    color={COLOR[textColor]}
                     center
+                    color={COLOR[textColor]}
                     spacing={1}
                   >
                     {this.props.title}
