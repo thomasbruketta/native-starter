@@ -64,7 +64,7 @@ export default class ProductDetailTouch extends React.Component<void, Props, voi
           backgroundColor='white'
         >
           <SimpleDetail
-            buttonType='opacity'
+            buttonType='highlight'
             onIncreaseCounter={this.props.onIncreaseCounter}
           />
         </View>

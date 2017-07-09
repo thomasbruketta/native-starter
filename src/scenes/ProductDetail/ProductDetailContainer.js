@@ -38,8 +38,8 @@ class ProductDetailContainer extends React.Component {
   }
   render() {
     return (
-      // <ProductDetailTouch {...this.props} />
-      <ProductDetailScroll {...this.props} />
+      <ProductDetailTouch {...this.props} />
+      // <ProductDetailScroll {...this.props} />
       // <ProductDetailPan {...this.props} />
     )
   }

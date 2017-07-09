@@ -22,7 +22,8 @@ export default class Button extends React.Component<void, Props, void> {
         hitSlop={{top: 10, right: 10, bottom: 10, left: 10}}
         pressEffect={pressEffect}
         onPress={this.props.onPress}
-        underlayColor='#98FB98'
+        activeOpacity={0.2}
+        underlayColor='green'
       >
         <NativeView>
           <Style_
