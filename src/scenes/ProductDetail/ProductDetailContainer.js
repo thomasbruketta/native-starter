@@ -12,6 +12,7 @@ import type { Stores } from 'stores'
 import ProductDetailTouch from './ProductDetailTouch'
 import ProductDetailScroll from './ProductDetailScroll'
 import ProductDetailPan from './ProductDetailPan'
+import ProductDetailDrag from './ProductDetailDrag'
 import type { Props } from './ProductDetailPan'
 
 // }}}
@@ -37,7 +38,8 @@ class ProductDetailContainer extends React.Component {
     return (
       // <ProductDetailTouch {...this.props} />
       // <ProductDetailScroll {...this.props} />
-      <ProductDetailPan {...this.props} />
+      <ProductDetailDrag {...this.props} />
+      // <ProductDetailPan {...this.props} />
     )
   }
 }
