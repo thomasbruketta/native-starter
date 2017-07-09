@@ -29,7 +29,7 @@ export default class ProductDetailScroll extends React.Component<void, Props, vo
   render() {
     return (
       <ScrollView
-        style={{flex: 1}}
+        // style={{flexGrow: 1}}
       >
         <Col
           grow

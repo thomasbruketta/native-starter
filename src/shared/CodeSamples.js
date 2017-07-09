@@ -18,14 +18,81 @@ import Header from 'shared/Header'
 
 // }}}
 
+
+import {
+ TouchableWithoutFeedback
+} from 'react-native'
+
+
+import {
+ TouchableOpacity
+} from 'react-native'
+
+
+import {
+ TouchableHighlight
+} from 'react-native'
+
+
+import Touchable from 'touchable'
+
+import Interact from 'interact'
+
+
 type Props = {
   label: string,
   onPress: Function
 }
+
+
 export default class Button extends React.Component<void, Props, void> {
   handlePress = () => {
     this.props.onPress()
   }
+
+        this.panResponder = PanResponder.create({
+          onStartShouldSetPanResponder: (evt, gestureState) => boolean,
+          onStartShouldSetPanResponderCapture: (evt, gestureState) => boolean,
+          onMoveShouldSetPanResponder: (evt, gestureState) => boolean,
+          onMoveShouldSetPanResponderCapture: (evt, gestureState) => boolean,
+          onPanResponderTerminationRequest: (evt, gestureState) => boolean,
+
+          onPanResponderGrant: (evt, gestureState) => { },
+          onPanResponderMove: (evt, gestureState) => { },
+          onPanResponderRelease: (evt, gestureState) => { },
+          onPanResponderTerminate: (evt, gestureState) => { },
+        })
+
+const d = {
+            onStartShouldSet___Responder: (evt, __________) => boolean,
+            onStartShouldSet___ResponderCapture: (evt, __________) => boolean,
+            onMoveShouldSet___Responder: (evt, __________) => boolean,
+            onMoveShouldSet___ResponderCapture: (evt, __________) => boolean,
+            on___ResponderTerminationRequest: (evt, __________) => boolean,
+
+            on___ResponderGrant: (evt, __________) => { },
+            on___ResponderMove: (evt, __________) => { },
+            on___ResponderRelease: (evt, __________) => { },
+            on___ResponderTerminate: (evt, __________) => { },
+          }
+
+  // ... in constructor()
+  animXY = new Animated.ValueXY({x: 0, y: 0})
+  panResponder = PanResponder.create({
+    // Ask to be the responder
+    onMoveShouldSetPanResponder: (evt, gestureState) => true,
+    // Handle gesture
+    onPanResponderGrant: (e, gestureState) => {
+      this.animXY.setOffset({x: this.animXY.x._value, y: this.animXY.y._value})
+      this.animXY.setValue({x: 0, y: 0})
+    },
+    onPanResponderMove: (evt, gestureState) => {
+      this.animXY.setValue({ x: gestureState.dx, y: gestureState.dy })
+    },
+    onPanResponderRelease: (e, gestureState) => {
+      this.animXY.flattenOffset()
+    }
+  })
 
   render() {
     return (
@@ -75,9 +142,7 @@ export default class Button extends React.Component<void, Props, void> {
         {/* Scrollview */}
 
 
-        <ScrollView
-          style={{flex: 1}}
-        >
+        <ScrollView>
           {this.props.children}
         </ScrollView>
 
@@ -85,7 +150,6 @@ export default class Button extends React.Component<void, Props, void> {
         <ScrollView
           horizontal
           pagingEnabled
-          style={{flex: 1}}
           showsHorizontalScrollIndicator={false}
           scrollEventThrottle={1}
           onScroll={this.handleScroll}
@@ -93,6 +157,107 @@ export default class Button extends React.Component<void, Props, void> {
         >
           {this.props.children}
         </ScrollView>
+
+      // ... in render()
+      <Animated.View
+        {...this.panResponder.panHandlers}
+        style={{transform: [
+          {translateY: this.animXY.y},
+          {translateX: this.animXY.x}
+        ]}}
+      >
+        <Image source={require('smoke.gif')}/>
+      </Animated.View>
+
+
+      <View {…this.panResponder.panHandlers} />
+
+      <TouchableWithoutFeedback>
+        <View>
+          <Child1 />
+          <Child2 />
+        </View>
+      </TouchableWithoutFeedback>
+
+
+      <TouchableOpacity>
+
+          <Child1 />
+          <Child2 />
+
+      </TouchableOpacity>
+
+
+      <TouchableHighlight>
+        <View>
+          <Child1 />
+          <Child2 />
+        </View>
+      </TouchableHighlight>
+
+      <Touchable>
+
+      <Touchable
+        pressEffect='opacity'
+      >
+
+      <Touchable
+        pressEffect='highlight'
+      >
+
+        <Touchable>
+
+            <Child1 />
+            <Child2 />
+
+        </Touchable>
+
+        <Touchable
+          pressEffect='opacity'
+        >
+
+            <Child1 />
+            <Child2 />
+
+        </Touchable>
+
+
+        <Touchable
+          pressEffect='highlight'
+        >
+
+            <Child1 />
+            <Child2 />
+
+        </Touchable>
+
+        <View
+          onResponderGrant={this.panResponder.panHandlers.onResponderGrant}
+          onResponderMove={this.panResponder.panHandlers.onResponderMove}
+          ...
+        />
+
+        <Interact>
+
+
+        <Interact
+          effect='opacity'
+        >
+
+
+        <Interact
+          effect='highlight'
+        >
+
+        <Interact
+          effect={[‘opacity’, ‘drag’]}
+        >
+
+        <Interact
+          effect='drag'
+        >
+          <Image source={require('smoke.gif')}/>
+        </Interact>
 
 
       </View>
