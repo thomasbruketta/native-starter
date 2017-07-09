@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "precommit": "yarn run lint",
     "prepush": "yarn run lint",
     "postcheckout": "yarn",
     "postpull": "yarn",
